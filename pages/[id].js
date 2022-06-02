@@ -24,6 +24,7 @@ export default function Id() {
       <motion.div
         initial={{ y: 50 }}
         animate={{ y: 0 }}
+        transition={{ type: "tween" }}
         className={styles.paragraph}
       >
         <p>
