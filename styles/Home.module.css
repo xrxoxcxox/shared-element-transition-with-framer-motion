@@ -37,3 +37,7 @@
   font-size: 21px;
   grid-column: 4 / 10;
 }
+
+.paragraph > p + p {
+  margin-top: 24px;
+}

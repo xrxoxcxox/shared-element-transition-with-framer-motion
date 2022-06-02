@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,12 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className={styles.topTitle}>Home</h1>
-      {[...Array(3)].map((_, i) => (
+      {[...Array(12)].map((_, i) => (
         <Link href={`/${i}`} key={i}>
           <a className={styles.image}>
-            <motion.div
-              layoutId={`image-${i}`}
-            >
+            <motion.div layoutId={`image-${i}`}>
               <Image src={`/${i}.jpg`} alt="" width={368} height={207} />
             </motion.div>
             <motion.h2 layoutId={`title-${i}`} className={styles.imageName}>

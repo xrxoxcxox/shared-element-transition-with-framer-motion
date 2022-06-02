@@ -21,22 +21,28 @@ export default function Id() {
       <motion.h1 layoutId={`title-${id}`} className={styles.pageTitle}>
         Image {id}
       </motion.h1>
-      <p className={styles.paragraph}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p className={styles.paragraph}>
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
-      </p>
-      <p className={styles.paragraph}>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur.
-      </p>
-      <p className={styles.paragraph}>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.
-      </p>
+      <motion.div
+        initial={{ y: 50 }}
+        animate={{ y: 0 }}
+        className={styles.paragraph}
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+        </p>
+      </motion.div>
     </div>
   );
 }
